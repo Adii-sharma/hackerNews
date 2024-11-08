@@ -1,0 +1,226 @@
+.hn-container {
+    min-height: 100vh;
+    background-color: white;
+  }
+  
+  .hn-header {
+    background-color: #FF6600;
+    padding: 8px;
+  }
+  
+  .hn-header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .hn-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .hn-logo {
+    background-color: #FF6600;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white; 
+  padding: 4px; 
+  border-radius: 4px; 
+  }
+  
+  .hn-title {
+    color: white;
+  }
+  
+  .hn-search-section {
+    flex: 1;
+    position: relative;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  
+  .hn-search-input {
+    width: 100%;
+    padding: 8px 120px 8px 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    height: 40px;
+  }
+  
+  .hn-search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+  
+  .hn-search-branding {
+
+    position: absolute;
+    right: -110px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #9ca3af;
+  }
+  
+  .hn-search-branding img {
+    height: 16px;
+  }
+  
+  .hn-settings-button {
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .hn-settings-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .hn-filters {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .hn-filter-select {
+    border: 1px solid #e5e5e5;
+    background: transparent;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    padding: 4px 24px 4px 8px;
+    border-radius: 4px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+  
+  .hn-filter-select:hover {
+    border-color: #d1d5db;
+  }
+  
+  .hn-filter-select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+  }
+  
+  .hn-main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .hn-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+  }
+  
+  .hn-loading-spinner {
+    animation: spin 1s linear infinite;
+  }
+  
+  .hn-results {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .hn-result-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .hn-result-title {
+    font-size: 18px;
+  }
+  
+  .hn-result-link {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .hn-result-link:hover {
+    text-decoration: underline;
+  }
+  
+  .hn-result-domain {
+    color: #6b7280;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+  .hn-result-meta {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .hn-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0;
+    margin-top: 24px;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .hn-pagination-button {
+    padding: 8px 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #374151;
+    font-size: 14px;
+    min-width: 100px;
+    transition: all 0.2s ease;
+  }
+  
+  .hn-pagination-button:hover:not(:disabled) {
+    border-color: #d1d5db;
+    background-color: #f9fafb;
+  }
+  
+  .hn-pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .hn-pagination-info {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
